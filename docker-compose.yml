@@ -1,0 +1,16 @@
+version: '2.1'
+
+services:
+  chefdk:
+    build:
+      context: .
+      args:
+        REFRESHED_ON: ${REFRESHED_ON}
+    image: chaznet/chefdk:latest
+    container_name: chefdk
+    hostname: chefdk
+    domainname: dmz.chaznet.local
+    environment:
+      - EDITOR=vim
+    volumes:
+      - /srv/docker/chef-repo:/chef-repo
