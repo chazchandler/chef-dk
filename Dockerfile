@@ -3,7 +3,7 @@ MAINTAINER Chef Software, Inc. <docker@chef.io>, chaz
 
 ARG REFRESHED_ON
 ARG CHANNEL=stable
-ARG VERSION=2.4.17
+ARG VERSION=2.5.3
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PATH=/opt/chefdk/bin:/opt/chefdk/embedded/bin:/root/.chefdk/gem/ruby/2.4.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
